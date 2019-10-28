@@ -5,13 +5,17 @@ en:
       donations:
         name: Donations
         paypal: PayPal
+        donated: The donation was successfully received!
+        error: There was a problem during the donations transaction.
         donation_amount: Donation amount (USD)
         donation_excerpt: Where your donation goes
         settings:
           global:
             title: Title of the donation call
             description: Description of the donation call
-            paypal: Paypal account to receive donations
+            paypal_username: Paypal API Username
+            paypal_password: Paypal API Password
+            paypal_signature: Paypal API Signature
             paypal_enabled: Enable PayPal
             excerpt: Donation resume
           step:

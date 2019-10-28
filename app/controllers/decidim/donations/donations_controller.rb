@@ -13,11 +13,11 @@ module Decidim
         @form = form(DonationForm).from_params(params, current_component: current_component)
         CreateDonation.call(@form) do
           on(:ok) do
-            flash[:notice] = "Se pudo!"
+            flash[:notice] = I18n.t("donated", scope: "decidim.components.donations")
           end
 
           on(:invalid) do
-            flash[:alert] = "Error"
+            flash[:alert] = I18n.t("error", scope: "decidim.components.donations")
           end
         end
         redirect_to donations_path
