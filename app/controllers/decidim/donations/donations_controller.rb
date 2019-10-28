@@ -29,7 +29,7 @@ module Decidim
           @form.full_amount,
           ip: request.remote_ip,
           return_url: url_for(thanks_donation_url(current_component)),
-          cancel_return_url: "http://local.mywebdomain.com:3000/seeyouagain",
+          cancel_return_url: url_for(thanks_donation_url(current_component)),
           currency: "USD",
           allow_guest_checkout: true,
           items: [{
