@@ -192,6 +192,7 @@ PATH
   remote: .
   specs:
     decidim-donations (0.19.0.dev)
+      activemerchant (~> 1.97)
       decidim-admin (= 0.19.0.dev)
       decidim-core (= 0.19.0.dev)
 
@@ -227,6 +228,11 @@ GEM
     activejob (5.2.3)
       activesupport (= 5.2.3)
       globalid (>= 0.3.6)
+    activemerchant (1.97.0)
+      activesupport (>= 4.2)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (>= 0.6.9)
+      nokogiri (~> 1.4)
     activemodel (5.2.3)
       activesupport (= 5.2.3)
     activerecord (5.2.3)
@@ -739,6 +745,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant
   bootsnap
   byebug (~> 11.0)
   decidim!

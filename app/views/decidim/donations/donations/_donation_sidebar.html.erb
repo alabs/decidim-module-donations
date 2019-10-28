@@ -1,0 +1,48 @@
+<div class="card donation">
+  <div class="card__content">
+    <h4>
+      <%= t("donations.donation_amount", scope: "decidim.components") %>
+    </h4>
+    <% if false %>
+    <div class="frequency">
+      <ul>
+        <li class="column small-6">
+          <button subscription="false" class="freq button small compact hollow secondary button--nomargin expanded">
+            Just once
+          </button>
+        </li>
+        <li class="column small-6">
+          <button subscription="true" class="freq button small compact hollow secondary button--nomargin expanded">
+            Give monthly
+          </button>
+        </li>
+      </ul>
+    </div>
+    <% end %>
+
+    <div class="amounts">
+      <ul>
+        <% %w(5 10 20 35 50 75 100 150).each do |amount| %>
+          <li class="column small-3">
+            <button amount="<%= amount %>" class="amount button compact hollow secondary button--nomargin expanded">
+              $<%= amount %>
+            </button>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="actions">
+      <%= paypal_button if component_settings.paypal_enabled? %>
+    </div>
+
+    <hr>
+
+    <div class="excerpt">
+      <h4>
+      <%= t("donations.donation_excerpt", scope: "decidim.components") %>
+      </h4>
+    <%= decidim_sanitize(translated_attribute(component_settings.excerpt)) %>
+    </div>
+  </div>
+</div>

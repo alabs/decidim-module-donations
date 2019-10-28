@@ -1,0 +1,27 @@
+---
+en:
+  decidim:
+    components:
+      donations:
+        name: Donations
+        paypal: PayPal
+        donation_amount: Donation amount (USD)
+        donation_excerpt: Where your donation goes
+        settings:
+          global:
+            title: Title of the donation call
+            description: Description of the donation call
+            paypal: Paypal account to receive donations
+            paypal_enabled: Enable PayPal
+            excerpt: Donation resume
+          step:
+            donations_enabled: Donations enabled
+
+    pages:
+      home:
+        statistics:
+          donations_count: Donations Received
+          donations_amounts: Donations amount
+    participatory_processes:
+      statistics:
+        donations_count: Donations Received

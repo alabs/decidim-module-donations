@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "decidim-admin", Decidim::Donations.version
   s.add_dependency "decidim-core", Decidim::Donations.version
+  s.add_dependency "activemerchant", "~> 1.97"
 end

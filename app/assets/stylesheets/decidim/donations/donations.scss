@@ -1,0 +1,30 @@
+@import "decidim/variables";
+
+.donation{
+  h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+  hr{
+    margin: 1rem auto 1rem;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    li{
+      padding-right: 0.3rem;
+      padding-left: 0.3rem;
+      margin-bottom: 0.7rem;
+      button{
+        height: 4rem;
+        padding: 0;
+        width: 3rem;
+      }
+    }
+  }
+  .amount{
+      button{
+        // padding: 1.3rem;
+      }
+  }
+}

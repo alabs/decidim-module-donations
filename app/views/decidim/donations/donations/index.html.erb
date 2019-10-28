@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "decidim/donations/donations" %>
+<div class="row">
+  <div class="columns hide-for-small-only medium-7 mediumlarge-7">
+    <div class="title-action">
+      <h2>
+      <%= translated_attribute(component_settings.title) %>
+      </h2>
+    </div>
+    <div class="content">
+    <%= decidim_sanitize(translated_attribute(component_settings.description)) %>
+    </div>
+  </div>
+  <div class="section columns medium-5 mediumlarge-5 large-4">
+    <%= render partial: "donation_sidebar" %>
+  </div>
+</div>
+

@@ -1,0 +1,14 @@
+<div class="action paypal">
+  <%= decidim_form_for(@form) do |form| %>
+    <%= form.hidden_field :title, value: translated_attribute(current_component.settings.title) %>
+    <%= form.hidden_field :description, value: decidim_sanitize(translated_attribute(current_component.settings.excerpt)) %>
+    <%= form.hidden_field :amount %>
+    <%= form.hidden_field :subscription %>
+
+    <div class="actions">
+      <%= form.submit t("paypal", scope: "decidim.components.donations"), class: "button expanded button--sc" %>
+    </div>
+  <% end %>
+</div>
+
+<%= javascript_include_tag("decidim/donations/paypal") %>

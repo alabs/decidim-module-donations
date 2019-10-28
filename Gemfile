@@ -10,6 +10,8 @@ gem "decidim-donations", path: "."
 gem "puma", "~> 3.0"
 gem "uglifier", "~> 4.1"
 
+gem "activemerchant"
+
 group :development, :test do
   gem "bootsnap"
   gem "byebug", "~> 11.0", platform: :mri

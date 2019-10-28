@@ -9,6 +9,12 @@ module Decidim
       isolate_namespace Decidim::Donations
 
       routes do
+        root to: "donations#index"
+        resources :donations do
+          member do
+            get "/thanks", action: "thanks", as: :thanks
+          end
+        end
       end
 
       initializer "decidim_donations.assets" do |app|

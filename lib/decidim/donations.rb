@@ -7,5 +7,6 @@ require "decidim/donations/component"
 
 module Decidim
   module Donations
+    autoload :Providers, "decidim/donations/providers"
   end
 end
