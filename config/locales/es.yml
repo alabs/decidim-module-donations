@@ -1,0 +1,31 @@
+---
+en:
+  decidim:
+    components:
+      donations:
+        name: Donaciones
+        paypal: PayPal
+        donated: ¡Hemos recibido tu donación correctamente!
+        error: Hubo un problema durante la transacción de donación.
+        donation_amount: Cantidad a donar (Euro)
+        donation_excerpt: Donde va tu donación
+        settings:
+          global:
+            title: Título de la petición de donación
+            description: Descripción de la petición de donación
+            paypal_username: Usuario del API de Paypal
+            paypal_password: Password del API de Paypal
+            paypal_signature: Firma del API de Paypal
+            paypal_enabled: Habilitar PayPal
+            excerpt: Resumen de donaciones
+          step:
+            donations_enabled: Donaciones habilitadas
+
+    pages:
+      home:
+        statistics:
+          donations_count: Donaciones recividas
+          donations_amounts: Cantidad de donaciones
+    participatory_processes:
+      statistics:
+        donations_count: Donaciones recibidas
